@@ -11,8 +11,10 @@ library(lubridate)
 # Create time stamp object from dates and times in the data
 hpdata$ts <- dmy_hms(paste(hpdata$Date,hpdata$Time))
 
-logicalDate <- (year(hpdata$Date) == 2007 & month(hpdata$Date) == 2 & day(hpdata$Date) == 1) | (year(hpdata$Date) == 2007 & month(hpdata$Date) == 2 & day(hpdata$Date) == 2) 
+#Subset data to only include 2207/2/1 and 2007/2/2
+logicalDate <- (year(hpdata$ts) == 2007 & month(hpdata$ts) == 2 & day(hpdata$ts) == 1) | (year(hpdata$ts) == 2007 & month(hpdata$ts) == 2 & day(hpdata$ts) == 2) 
 
+#subsetted data set
 hpdatas <- hpdata[logicalDate,]
 
 #create PNG plot

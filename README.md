@@ -10,7 +10,6 @@ analysis course. There are eight files:
 2. plot2.R - contains code that reads in data and creates a plot and stores it in plot2.png
 3. plot3.R - contains code that reads in data and creates a plot and stores it in plot3.png
 4. plot4.R - contains code that reads in data and creates a plot and stores it in plot4.png
-
 5. plot1.png - file with plot 1
 6. plot2.png - file with plot 2
 7. plot3.png - file with plot 3
